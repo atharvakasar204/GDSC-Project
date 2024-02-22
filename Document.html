@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Poverty Eradication Network</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAF9F6;
+        }
+        header {
+            background-color: #ADD8E6;
+            color: black;
+            padding: 25px;
+            text-align: center;
+        }
+        main {
+            padding: 25px;
+        }
+        button {
+            padding: 15px 40px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            line-height: 20px;
+            font-size: 16px;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #333333;
+        }
+        a {
+            display: block;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Global Poverty Eradication Network</h1>
+        <h2>End poverty in all its forms everywhere</h2>
+    </header>
+    <main>
+        <h3>Dear friends,</h3>
+        <p>Together, We Can End Poverty. Join us in our mission to end poverty worldwide. Your donation can make a real difference in the lives of those in need. Together, we can provide food, shelter, education, and hope for a better future. Every contribution, no matter how small, helps us move one step closer to our goal. Donate today and be a part of the change!</p>
+        <h3>We are dedicated to eliminating poverty by providing assistance through our website to those in need. Here's how we do it:</h3>
+        <ol>
+            <li>Application Process: Individuals complete a form on our website, providing necessary information.</li>
+            <li>Verification: We verify their information through various methods, including requesting government-approved income certificates.</li>
+            <li>Assessment: Our team of over 1000 volunteers conducts on-site visits to assess living conditions and employment status.</li>
+            <li>Tailored Support: Each volunteer caters to the specific needs of the individual.</li>
+            <li>Direct Aid: To prevent misuse of donations, we provide direct aid in the form of essential items. In cases where education expenses are involved, our volunteers personally visit schools to pay for expenses.</li>
+            <li>Entrepreneurship Support: We offer business startup kits to many individuals to help them become self-sufficient.</li>
+        </ol>
+        <a href="aab.html">
+            <button>Donate</button>
+        </a>
+        <a href="aac.html">
+            <button>Apply for Donation</button>
+        </a>
+        <div>
+            <img src="17.jpg" alt="Image 1">
+            <img src="18.jpg" alt="Image 2">
+            <img src="19.jpg" alt="Image 3">
+            <img src="16.jpg" alt="Image 4">
+            <img src="20.jpg" alt="Image 5">
+            <img src="21.png" alt="Image 6">
+            <img src="22.jpg" alt="Image 7">
+            <img src="23.jpg" alt="Image 8">
+        </div>
+        <h2>Contact Information</h2>
+        <p>If you have any questions or would like to learn more about how you can get involved, please feel free to contact us:</p>
+        <p>Email: kamdhenucharitabletrust@gmail.com</p>
+        <p>Phone: 9834702684</p>
+        <p>&copy; 2024 Donation Camp. All rights reserved.</p>
+    </main>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
